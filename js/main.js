@@ -69,17 +69,7 @@ $(document).ready(function(){
 });
 (function($){
     $(window).on("load",function(){
-        $(".dashboard-sideBar-ct").mCustomScrollbar({
-        	theme:"light-thin",
-        	scrollbarPosition: "inside",
-        	autoHideScrollbar: true,
-        	scrollButtons: {enable: true}
-        });
-        $(".dashboard-contentPage, .Notifications-body").mCustomScrollbar({
-        	theme:"dark-thin",
-        	scrollbarPosition: "inside",
-        	autoHideScrollbar: true,
-        	scrollButtons: {enable: true}
-        });
+        $(".dashboard-sideBar-ct").css({ overflowY: 'auto' }); 
+	$(".dashboard-contentPage, .Notifications-body").css({ overflowY: 'auto' });
     });
 })(jQuery);
